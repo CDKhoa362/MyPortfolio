@@ -1,0 +1,15 @@
+# Bỏ qua thư mục hệ thống của Visual Studio
+.vs/
+
+# Bỏ qua thư mục build
+bin/
+obj/
+
+# Bỏ qua thư mục chứa dữ liệu (database, files...)
+Data/
+
+# Bỏ qua file cấu hình ứng dụng (tránh lộ thông tin nhạy cảm)
+appsettings.json
+
+# Bỏ qua file khởi động ứng dụng
+Program.cs
