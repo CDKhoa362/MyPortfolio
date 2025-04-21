@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MyPortfolio.Models.Account
+namespace MyPortfolio.Models.Authentication
 {
     public class SignUp
     {
@@ -13,7 +13,7 @@ namespace MyPortfolio.Models.Account
         [Required, DataType(DataType.Password)]
         public string Password { get; set; } = null!;
 
-        [Required]
+        [Required, DataType(DataType.Password)]
         public string ConfirmPassword { get; set; } = null!;
     }
 }

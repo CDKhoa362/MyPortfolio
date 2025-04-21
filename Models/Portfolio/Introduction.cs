@@ -4,7 +4,7 @@ namespace MyPortfolio.Models.Portfolio
 {
     public class Introduction
     {
-        public string IntroductionId { get; set; } = Guid.NewGuid().ToString();
+        public string IntroductionId { get; set; } = null!;
         public string? FirstName { get; set; } = null!;
         public string? LastName { get; set; } = null!;
         public DateOnly? DOB { get; set; } = null!;

@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using MyPortfolio.Models.Account;
+using MyPortfolio.Models.Authentication;
 
 namespace MyPortfolio.Repositories
 {
     public interface IAccountRepository
     {
-        public Task<IdentityResult> SignUpAsync(SignUp model);
-        public Task<string> SignInAsync(SignIn model);
+        Task<IdentityResult> SignUpAsync(SignUp model);
+        Task<Tokens> SignInAsync(SignIn model);
     }
 }
